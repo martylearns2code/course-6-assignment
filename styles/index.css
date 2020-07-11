@@ -5,3 +5,27 @@ body{
     background-size: cover;
 
 }
+#main-div{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+#allposts-Button{
+	background-color:yellow;
+	text-align:center;
+	width:100px;
+	padding:10px;
+	margin-right:10px;
+	margin-top:275px;
+	border-style:none;
+}
+#createpost-Button{
+	background-color:yellow;
+	text-align:center;
+	width:100px;
+	padding:10px;
+	margin-left:10px;
+	margin-top:275px;
+	border-style:none;
+}
