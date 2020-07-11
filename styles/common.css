@@ -1,0 +1,36 @@
+#header-div{
+	display:flex;
+	flex-direction:row;
+	align-items:flex-start;
+	justify-content:flex-start;
+	align-content: space-around;
+	
+}
+#scribbler-div{
+	font-family: 'Montez', cursive;
+	font-size:40px;
+    color:blue;
+    flex-grow:6 	
+}
+h3{
+	font-family: 'Ubuntu Mono', monospace;
+}
+#sign-Up-Button{
+	   background-color:blue;
+	   text-align:center;
+	   color:white;
+	   margin-right:10px;
+	   padding:10px;
+	   border-style:none;
+	   width:100px;
+ }
+ #sign-In-Button{
+	   background-color:blue;
+	   text-align:center;
+	   color:white;
+	   margin-left:10px;
+	   padding:10px;
+	   border-style:none;
+	   width:100px;
+ }
+ 
