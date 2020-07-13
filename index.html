@@ -8,17 +8,73 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href=".\styles\index.css">
 	<link rel="stylesheet" href=".\styles\common.css">
+	<script src=".\scripts\common.js"></script>
+	
 </head>
 
-<body >
+<body  onfocus="parentDisable();" onclick="parentDisable();" >
     <!-- TODO: Include all your code for the header and home page here -->
 	<header>
 	    <div id="header-div">
           <div id="scribbler-div">ScriBBler</div>		
-		  <div id ="signup-div"><button id="sign-Up-Button" type="submit" >Sign Up</button> </div>
-		  <div id="signin-div"><button id="sign-In-Button" type="submit" >Sign In</button> </div>
+		  <button id="sign-Up-Button" type="button" onclick="signUp()" >Sign Up</button>
+		  <button id="sign-In-Button" type="button" onclick="signIn()" >Sign In</button>
 		</div>  
 		<h3>Explore, Imagine, Create</h3>
+		<!-- The Sign-Up Modal -->
+        <div id="signUpModal" class="modal">
+
+        <!-- Modal content -->
+        <div css="modal-content">
+           <div class="modal-header">
+               <span class="close" onclick="closeSignUpModal()">&times;</span>
+               <h2>Get Started</h2>
+           </div>
+		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
+		   <form>
+           <div class="modal-body">
+              <label for="name-signup">Name</label><br>
+			  <input type="text" id="name-signup" placeholder="Enter your name" required></input><br>
+			  <label for="username-signup">Username</label><br>
+			  <input type="text" id="username-signup" placeholder="Enter your username" required></input><br>
+			  <label for="password-signup">Password</label><br>
+			  <input type="password" id="password-signup" placeholder="Enter your password" required></input><br>
+			  <label for="confirmpw-signup">Confirm Password</label><br>
+			  <input type="password" id="confirmpw-signup" placeholder="Re-enter your password" required></input><br>
+           </div>
+           <div class="modal-footer">
+              <button type="submit" class="modal-SignUpOrIn-Button">Sign Up</button>
+           </div>
+		 </form>  
+        </div>
+    </div>
+	<!-- The Sign-In Modal -->
+        <div id="signInModal" class="modal">
+
+        <!-- Modal content -->
+        <div css="modal-content">
+           <div class="modal-header">
+               <span class="close" onclick="closeSignInModal()">&times;</span>
+               <h2>Welcome Back!</h2>
+           </div>
+		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
+		   <form>
+           <div class="modal-body">
+              <label for="username-signup">Username</label><br>
+			  <input type="text" id="username-signin" placeholder="Enter your username" required></input><br>
+			  <label for="password-signup">Password</label><br>
+			  <input type="password" id="password-signin" placeholder="Enter your password" required></input><br>
+			</div>
+           <div class="modal-footer">
+              <button type="submit" class="modal-SignUpOrIn-Button">Sign In</button>
+           </div>
+		 </form>
+		 <br>
+		 <br>
+		 <label id="ask4Memebership">Not a member?</label>
+         <a href="#signUpModal" onclick="signUp()">Sign Up</a>  		 
+        </div>
+    </div>
 	</header>
     <div id="main-div">
         <div id ="allposts-div"><button id="allposts-Button" type="submit" >All Posts</button> </div>

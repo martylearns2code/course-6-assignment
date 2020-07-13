@@ -12,6 +12,9 @@
     color:blue;
     flex-grow:6 	
 }
+h2{
+	margin-left:10px;
+}
 h3{
 	font-family: 'Ubuntu Mono', monospace;
 }
@@ -33,4 +36,68 @@ h3{
 	   border-style:none;
 	   width:100px;
  }
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position:fixed;
+  z-index: 1; /* Sit on top */
+  margin-left:625px;
+  margin-top:150px;
+  width: 20%; /* Full width */
+  height: 53%; /* Full height */
+  background-color: white;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-SignUpOrIn-Button{
+	background-color:#00cc44;
+	color:white;
+	text-align:center;
+	margin-left:10px;
+	width:280px;
+	padding:5px;
+	margin-top:10px;
+}
+label{
+	margin-top:7px;
+	margin-bottom:8px;
+	margin-left:10px;
+	
+}
+input{
+	 width:275px;
+	 margin-top:7px;
+	 margin-bottom:8px;
+	 margin-left:10px;
+	 height:25px;
+	 background-color:#f0f5f5;
+}
+hr{
+	margin:10px;
+}
+#ask4Memebership{
+	margin-left:80px;
+}
  
