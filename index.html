@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href=".\styles\index.css">
 	<link rel="stylesheet" href=".\styles\common.css">
 	<script src=".\scripts\common.js"></script>
-	
+	<script src=".\scripts\index.js"></script>
 </head>
 
 <body  onfocus="parentDisable();" onclick="parentDisable();" >
@@ -77,9 +77,32 @@
     </div>
 	</header>
     <div id="main-div">
-        <div id ="allposts-div"><button id="allposts-Button" type="submit" >All Posts</button> </div>
-     	<div id="createpost-div"><button id="createpost-Button" type="submit" >Create Post</button> </div>
-	</div>  
+	     <button id="allposts-Button" type="button" onclick="allPostsRedirect()" >All Posts</button> 
+     	 <button id="createpost-Button" type="button" onclick="createPost()" >Create Post</button>
+         <!-- The Create-Post Modal -->
+        <div id="createPostModal" class="modalPost">
+
+           <!-- Modal content -->
+           <div css="modalPost-content">
+            <div class="modal-header">
+               <span class="close" onclick="closePostModal()">&times;</span>
+               <h2>Pen Your Post</h2>
+            </div>
+		     <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
+		     <form>
+             <div class="modal-body">
+               <label for="title">Title</label><br>
+			   <input type="text" id="title" placeholder="Enter title of your post" required></input><br>
+			   <label for="contents">Contents</label><br>
+			   <textarea id="contents" name="postContent" rows="20" cols="165" placeholder="Enter contents of your post" required></textarea>
+			 </div>
+           <div class="modal-footer">
+              <button type="submit" id="modalPost-CreateButton">Create</button>
+           </div>
+		   </form>
+		</div>
+	  </div>	
+     </div>  
 </body>
 
 </html>
