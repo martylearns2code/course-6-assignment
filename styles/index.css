@@ -1,0 +1,84 @@
+body{
+	background-image: url("file:///C:/Users/hp/course-6-assignment/images/background.jpg"); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+#main-div{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+#allposts-Button{
+	background-color:yellow;
+	text-align:center;
+	width:100px;
+	padding:10px;
+	margin-right:10px;
+	margin-top:275px;
+	border-style:none;
+}
+#createpost-Button{
+	background-color:yellow;
+	text-align:center;
+	width:100px;
+	padding:10px;
+	margin-left:10px;
+	margin-top:275px;
+	border-style:none;
+}
+ /* The Modal (background) */
+.modalPost {
+  display: none; /* Hidden by default */
+  position:fixed;
+  z-index: 1; /* Sit on top */
+  margin-left:65px;
+  margin-top:60px;
+  width: 80%; /* Full width */
+  height: 75%; /* Full height */
+  background-color: white;
+}
+
+/* Modal Content/Box */
+.modalPost-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#modalPost-CreateButton{
+	background-color:#00cc44;
+	color:white;
+	text-align:center;
+	margin-left:500px;
+	width:80px;
+	padding:5px;
+	margin-top:10px;
+	cursor:pointer;
+}
+#contents{
+	margin-left:10px;
+	background-color:#f0f5f5;
+	
+}
+#title{
+	width:1200px;
+}
