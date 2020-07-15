@@ -1,0 +1,10 @@
+body{
+	background-color:#ffeedd;
+
+}
+#postslist-div{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	
+}
