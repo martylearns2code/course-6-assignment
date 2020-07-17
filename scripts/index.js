@@ -1,5 +1,5 @@
 function allPostsRedirect() {
-	 window.location.href = "C:/Users/hp/course-6-assignment/html/postslist.html";
+	 window.location.href = "./html/postslist.html";
 }      
 function createPost() {
      var createPostmodal = document.getElementById("createPostModal");
