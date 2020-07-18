@@ -1,0 +1,93 @@
+#titleOfPost{
+  text-align:center;
+  justify-content:center;
+  border-style:none;
+}
+h3{
+  margin-left:13px;	
+}
+h4{
+	margin-left:13px;
+}
+p{
+   margin-left:13px;	
+}
+.fa-edit {
+  color: white;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fa-edit:hover,
+.fa-edit:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.fa-save {
+  color: white;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fa-save:hover,
+.fa-save:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#editAndSave{
+	text-align:center;
+	background-color:red;
+	padding:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+	border-style:none;
+}
+#contents{
+	justify-content:center;
+	margin:15px 10px 15px 15px;
+	
+}
+.fa-thumbs-up {
+  color: white;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fa-thumbs-up:hover,
+.fa-thumbs-up:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#likes{
+	text-align:center;
+	background-color:red;
+	padding:10px;
+	margin-left:13px;
+	border-style:none;
+	
+}
+#comments{
+	margin-left:13px;
+	
+}
+#commentButton{
+	color:white;
+	text-align:center;
+	background-color:red;
+	padding:10px;
+	margin-bottom:10px;
+	margin-left:13px;
+	border-style:none;
+	cursor:pointer;
+	
+}
+#addComments{
+	margin-left:13px;
+	background-color:grey;
+}
