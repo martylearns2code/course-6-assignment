@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="..\styles\common.css">
+	<script src="..\scripts\common.js"></script>
+	<link rel="stylesheet" href="..\styles\post.css">
+	<script src="..\scripts\post.js"></script>
 </head>
-<body>
-<p>post details here....</p>
-</body>
 
+<body >
+    <!-- TODO: Include all your code for the header and home page here -->
+	<header>
+	    <div id="header-div">
+          <div id="scribbler-div">ScriBBler</div>		
+		  <button id="sign-Up-Button" type="button" onclick="signUp()" >Sign Up</button>
+		  <button id="sign-In-Button" type="button" onclick="signIn()" >Sign In</button>
+		</div>  
+		<h3>Explore, Imagine, Create</h3>
+		<!-- The Sign-Up Modal -->
+        <div id="signUpModal" class="modal">
+
+        <!-- Modal content -->
+        <div css="modal-content">
+           <div class="modal-header">
+               <span class="fa fa-times" onclick="closeSignUpModal()"></span>
+               <h2>Get Started</h2>
+           </div>
+		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
+		   <form>
+           <div class="modal-body">
+              <label for="name-signup">Name</label><br>
+			  <input type="text" id="name-signup" placeholder="Enter your name" required></input><br>
+			  <label for="username-signup">Username</label><br>
+			  <input type="text" id="username-signup" placeholder="Enter your username" required></input><br>
+			  <label for="password-signup">Password</label><br>
+			  <input type="password" id="password-signup" placeholder="Enter your password" required></input><br>
+			  <label for="confirmpw-signup">Confirm Password</label><br>
+			  <input type="password" id="confirmpw-signup" placeholder="Re-enter your password" required></input><br>
+           </div>
+           <div class="modal-footer">
+              <button type="submit" class="modal-SignUpOrIn-Button">Sign Up</button>
+           </div>
+		 </form>  
+        </div>
+    </div>
+	<!-- The Sign-In Modal -->
+        <div id="signInModal" class="modal">
+
+        <!-- Modal content -->
+        <div css="modal-content">
+           <div class="modal-header">
+               <span class="fa fa-times" onclick="closeSignInModal()"></span>
+               <h2>Welcome Back!</h2>
+           </div>
+		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
+		   <form>
+           <div class="modal-body">
+              <label for="username-signup">Username</label><br>
+			  <input type="text" id="username-signin" placeholder="Enter your username" required></input><br>
+			  <label for="password-signup">Password</label><br>
+			  <input type="password" id="password-signin" placeholder="Enter your password" required></input><br>
+			</div>
+           <div class="modal-footer">
+              <button type="submit" class="modal-SignUpOrIn-Button">Sign In</button>
+           </div>
+		 </form>
+		 <br>
+		 <br>
+		 <label id="ask4Memebership">Not a member?</label>
+         <a href="#signUpModal" onclick="signUp()">Sign Up</a> 
+        </div>
+      </div>
+    </header>
+    <h2 id="titleOfPost" contentEditable="false">Sachin Ramesh Tendulkar.......a bit about him</h2>
+    <div>
+	   <button type="button" id="editAndSave" class="fa fa-edit" onclick="editPost()">Edit</button><h3>Srishti Gupta</h3>
+       <textarea id="contents" name="postContent" rows="15" cols="204" readOnly>Sachin Tendulkar, in full Sachin Ramesh Tendulkar, (born April 24, 1973, Bombay [Mumbai], India), Indian professional cricket player, considered by many to be one of the greatest batsmen of all time. In 2012 he became the first cricketer to score 100 centuries (100 runs in a single innings) in international play.Tendulkar was given his first bat when he was 11 years of age. As a 14-year-old, he used it to score 329 out of a world-record stand of 664 in a school match. A year later he scored a century on his first-class debut for Bombay (Mumbai), and at age 16 years 205 days he became India’s youngest Test (international) cricketer, making his debut against Pakistan in Karachi in November 1989. When he was 18 he scored two centuries in Australia (148 in Sydney and 114 in Perth), and in 1994 he scored 179 against the West Indies. In August 1996, at age 23, Tendulkar was made captain of his country’s team.</textarea>	
+	   <button type="button" id="likesButton" class="fa fa-thumbs-up" onclick="likesForPost()">Like</button><br/><br/><br/>
+	   <p id="likesComment">Be the first one to like this!</p>
+	   <textarea id="comments" name="postComments" rows="3" cols="150" placeholder="Leave a comment...." ></textarea><br/>
+	   <button type="button" id="commentButton" onclick="commentsOnPost()">Comment</button><br/>
+	   <h4>All Comments</h4>
+	   <div id="addComments"></div>
+		
+	 </div>
+</body>
 
 </html>
