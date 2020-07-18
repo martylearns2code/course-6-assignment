@@ -9,9 +9,7 @@ h3{
 h4{
 	margin-left:13px;
 }
-p{
-   margin-left:13px;	
-}
+
 .fa-edit {
   color: white;
   float: right;
@@ -64,13 +62,16 @@ p{
   text-decoration: none;
   cursor: pointer;
 }
-#likes{
+#likesButton{
 	text-align:center;
 	background-color:red;
 	padding:10px;
 	margin-left:13px;
 	border-style:none;
 	
+}
+#likesComment{
+   margin-left:13px;	
 }
 #comments{
 	margin-left:13px;
@@ -88,6 +89,11 @@ p{
 	
 }
 #addComments{
+	display:flex;
+	flex-direction:column-reverse;
+	width:50%;
+	border-style:none;
+	border-color:none;
 	margin-left:13px;
-	background-color:grey;
+	background-color:#d6d6c2;
 }
