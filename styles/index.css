@@ -1,5 +1,5 @@
 body{
-	background-image: url("file:///C:/Users/hp/course-6-assignment/images/background.jpg"); 
+	background-image: url("../images/background.jpg"); 
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -19,6 +19,7 @@ body{
 	margin-right:10px;
 	margin-top:275px;
 	border-style:none;
+	cursor:pointer;
 }
 #createpost-Button{
 	background-color:yellow;
@@ -28,6 +29,7 @@ body{
 	margin-left:10px;
 	margin-top:275px;
 	border-style:none;
+	cursor:pointer;
 }
  /* The Modal (background) */
 .modalPost {

@@ -6,9 +6,15 @@ var likesButton;
 var likesComment;
 var comments;
 var commentAdded;
-
+var pointerRef;
 
 function editPost(){
+	pointerRef=document.getElementsByName("pointerRef");
+	for(let item of pointerRef){
+		if(item.id=="sign-Up-Button"|| item.id=="sign-In-Button"){
+		item.style.pointerEvents="none";
+	};
+	};
 	editAndSaveButton=document.getElementById("editAndSave");
 	var operation=editAndSaveButton.innerHTML;
 	if(operation=="Edit"){
@@ -34,6 +40,11 @@ function editPost(){
     titleElement.style.borderStyle="none";	
 	titleElement.style.borderColor="none";
 	postElement.style.borderColor="black";
+	for(let item of pointerRef){
+		if(item.id=="sign-Up-Button"|| item.id=="sign-In-Button"){
+		item.style.pointerEvents="auto";
+	    };
+	};
 		
 	}
 }

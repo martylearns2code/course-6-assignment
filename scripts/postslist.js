@@ -1,5 +1,6 @@
 var newNode;
 var parent;
+var pointerRef;
     
 
 
@@ -22,7 +23,12 @@ function onLoadOfPage(){
 }
 
 function deletePost(id){
- // alert("clicked");	
+ // alert("clicked");
+  pointerRef=document.getElementsByName("pointerRef");
+	for(let item of pointerRef){
+		alert(item.id);
+		item.style.pointerEvents="none";
+	}; 
   newNode.innerHTML=id;
   var delModal=document.getElementById('deleteModal');
   //var hidePage=document.getElementById('hidePage');
@@ -31,6 +37,11 @@ function deletePost(id){
 }
 
 function deleteConfirm(){
+	pointerRef=document.getElementsByName("pointerRef");
+	for(let item of pointerRef){
+		alert(item.id);
+		item.style.pointerEvents="auto";
+	};
 //  alert("clicked");
   var p = document.getElementById("postClicked");
 //  alert(p.innerHTML);
@@ -69,6 +80,11 @@ function deleteConfirm(){
    }; 
 }
 function deleteNot(){
+	pointerRef=document.getElementsByName("pointerRef");
+	for(let item of pointerRef){
+		alert(item.id);
+		item.style.pointerEvents="auto";
+	};
 	var l = document.getElementById("deleteModal");
 	l.style.display="none";
 	const listItems = document.getElementById('flex').children;

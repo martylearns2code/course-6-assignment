@@ -26,6 +26,7 @@ h3{
 	   padding:10px;
 	   border-style:none;
 	   width:100px;
+	   cursor:pointer;
  }
  #sign-In-Button{
 	   background-color:blue;
@@ -35,6 +36,7 @@ h3{
 	   padding:10px;
 	   border-style:none;
 	   width:100px;
+	   cursor:pointer;
  }
  /* The Modal (background) */
 .modal {
