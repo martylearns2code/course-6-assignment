@@ -1,45 +1,45 @@
-body{
-	background-image: url("../images/background.jpg"); 
+body {
+	background-image: url("../images/background.jpg");    /*background image for the home page*/
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 
 }
-#main-div{
-	display:flex;
-	flex-direction:row;
-	justify-content:center;
-	align-items:center;
+#main-div {                                             /*div that contains the allposts and create post buttons  */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
-#allposts-Button{
-	background-color:yellow;
-	text-align:center;
-	width:100px;
-	padding:10px;
-	margin-right:10px;
-	margin-top:275px;
-	border-style:none;
-	cursor:pointer;
+#allposts-Button {                                     /*css for allposts button */
+	background-color: yellow;
+	text-align: center;
+	width: 100px;
+	padding: 10px;
+	margin-right: 10px;
+	margin-top: 275px;
+	border-style: none;
+	cursor: pointer;
 }
-#createpost-Button{
-	background-color:yellow;
-	text-align:center;
-	width:100px;
-	padding:10px;
-	margin-left:10px;
-	margin-top:275px;
-	border-style:none;
-	cursor:pointer;
+#createpost-Button {                                   /*css for create post button*/
+	background-color: yellow;
+	text-align: center;
+	width: 100px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-top: 275px;
+	border-style: none;
+	cursor: pointer;
 }
  /* The Modal (background) */
 .modalPost {
-  display: none; /* Hidden by default */
-  position:fixed;
-  z-index: 1; /* Sit on top */
-  margin-left:65px;
-  margin-top:60px;
-  width: 80%; /* Full width */
-  height: 75%; /* Full height */
+  display: none; 
+  position: fixed;
+  z-index: 1;     /*sit on top*/
+  margin-left: 65px;
+  margin-top: 60px;
+  width: 80%; 
+  height: 75%; 
   background-color: white;
 }
 
@@ -66,21 +66,21 @@ body{
   text-decoration: none;
   cursor: pointer;
 }
-#modalPost-CreateButton{
-	background-color:#00cc44;
-	color:white;
-	text-align:center;
-	margin-left:500px;
-	width:80px;
-	padding:5px;
-	margin-top:10px;
-	cursor:pointer;
+#modalPost-CreateButton {                                            /*css for create button on post modal*/
+	background-color: #00cc44;
+	color: white;
+	text-align: center;
+	margin-left: 500px;
+	width: 80px;
+	padding: 5px;
+	margin-top: 10px;
+	cursor: pointer;
 }
-#contents{
-	margin-left:10px;
-	background-color:#f0f5f5;
+#contents {                                                         /*css for the contents textarea*/
+	margin-left: 10px;
+	background-color: #f0f5f5;
 	
 }
-#title{
-	width:1200px;
+#title {
+	width: 1200px;
 }

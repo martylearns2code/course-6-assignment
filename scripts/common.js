@@ -1,16 +1,14 @@
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+
      
- var pointerRef;
+ var pointerRef;      //variable to access the elements in the document by "name attribute"--used for setting the pointerEvents
+
+//called when the user wants to sign up by clicking on the sign-up button from homepage and all the other html pages in the application
+//disables the pointerEvents for all the clickable elements on the page concerned
+//displays the Sign-up-modal 
     
 function signUp(){
 	pointerRef=document.getElementsByName("pointerRef");
 	for(let item of pointerRef){
-		alert(item.id);
 		item.style.pointerEvents="none";
 	};
     var signInmodal = document.getElementById("signInModal");
@@ -27,21 +25,27 @@ function signUp(){
     confirmpw.defaultvalue="Re-enter your password";
    
 } 
+
+//called when the user wants to exit from the sign-up-modal
+//enables pointerEvents of the elements of the page concerned
+
   
 function closeSignUpModal(){
-	alert("clicked");
 	pointerRef=document.getElementsByName("pointerRef");
 	for(let item of pointerRef){
-		alert(item.id);
 		item.style.pointerEvents="auto";
 	};
 	var signUpmodal = document.getElementById("signUpModal");
     signUpmodal.style.display="none";  
 }
+
+//called when the user wants to sign in by clicking on the sign-in button from homepage and all the other html pages in the application
+//disables the pointerEvents for all the clickable elements on the page concerned
+//displays the Sign-in-modal 
+
 function signIn(){
 	pointerRef=document.getElementsByName("pointerRef");
 	for(let item of pointerRef){
-		alert(item.id);
 		item.style.pointerEvents="none";
 	};
    var signUpmodal = document.getElementById("signUpModal");
@@ -54,11 +58,13 @@ function signIn(){
    pword.defaultvalue="Enter your password";    
       
 }
+
+//called when the user wants to exit from the sign-in-modal
+//enables pointerEvents of the elements of the page concerned
+
 function closeSignInModal(){
-	alert("clicked");
 	pointerRef=document.getElementsByName("pointerRef");
 	for(let item of pointerRef){
-		alert(item.id);
 		item.style.pointerEvents="auto";
 	};
 	var signInmodal = document.getElementById("signInModal");

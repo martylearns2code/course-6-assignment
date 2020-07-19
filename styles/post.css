@@ -1,13 +1,13 @@
-#titleOfPost{
-  text-align:center;
-  justify-content:center;
-  border-style:none;
+#titleOfPost {                                               /*css for title of post  */
+  text-align: center;
+  justify-content: center;
+  border-style: none;
 }
-h3{
-  margin-left:13px;	
+h3 {
+  margin-left: 13px;	
 }
-h4{
-	margin-left:13px;
+h4 {
+	margin-left: 13px;
 }
 
 .fa-edit {
@@ -36,17 +36,17 @@ h4{
   text-decoration: none;
   cursor: pointer;
 }
-#editAndSave{
-	text-align:center;
-	background-color:red;
-	padding:10px;
-	margin-right:10px;
-	margin-bottom:20px;
-	border-style:none;
+#editAndSave {                                             /*css for edit and save button  */
+	text-align: center;
+	background-color: red;
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border-style: none;
 }
-#contents{
-	justify-content:center;
-	margin:15px 10px 15px 15px;
+#contents {                                                 /*css for contents of the post-textarea  */
+	justify-content: center;
+	margin: 15px 10px 15px 15px;
 	
 }
 .fa-thumbs-up {
@@ -62,38 +62,38 @@ h4{
   text-decoration: none;
   cursor: pointer;
 }
-#likesButton{
-	text-align:center;
-	background-color:red;
-	padding:10px;
-	margin-left:13px;
-	border-style:none;
+#likesButton {                                                  /*css for likes button  */
+	text-align: center;
+	background-color: red;
+	padding: 10px;
+	margin-left: 13px;
+	border-style: none;
 	
 }
-#likesComment{
-   margin-left:13px;	
+#likesComment {
+   margin-left: 13px;	
 }
-#comments{
-	margin-left:13px;
+#comments {
+	margin-left: 13px;
 	
 }
-#commentButton{
-	color:white;
-	text-align:center;
-	background-color:red;
-	padding:10px;
-	margin-bottom:10px;
-	margin-left:13px;
-	border-style:none;
-	cursor:pointer;
+#commentButton {                                                   /*css for comment button  */
+	color: white;
+	text-align: center;
+	background-color: red;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 13px;
+	border-style: none;
+	cursor: pointer;
 	
 }
-#addComments{
-	display:flex;
-	flex-direction:column-reverse;
-	width:50%;
-	border-style:none;
-	border-color:none;
-	margin-left:13px;
-	background-color:#d6d6c2;
+#addComments {                                                    /*css for the div in to which comments are dynamically added*/
+	display: flex;
+	flex-direction: column-reverse;
+	width: 50%;
+	border-style: none;
+	border-color: none;
+	margin-left: 13px;
+	background-color: #d6d6c2;
 }
