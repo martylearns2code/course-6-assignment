@@ -2,24 +2,23 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <!--head includes all the links to external files-like scripts,css files,font files and meta info-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="..\styles\common.css">
-	<script src="..\scripts\common.js"></script>
 	<link rel="stylesheet" href="..\styles\post.css">
+	<script src="..\scripts\common.js"></script>
 	<script src="..\scripts\post.js"></script>
 </head>
 
 <body >
-    <!-- TODO: Include all your code for the header and home page here -->
+    <!-- Header begins here -->
 	<header>
 	    <div id="header-div">
           <div id="scribbler-div">ScriBBler</div>		
-		  <button id="sign-Up-Button" type="button" onclick="signUp()" >Sign Up</button>
-		  <button id="sign-In-Button" type="button" onclick="signIn()" >Sign In</button>
+		  <button id="sign-Up-Button" type="button" name="pointerRef" onclick="signUp()" >Sign Up</button>
+		  <button id="sign-In-Button" type="button"  name="pointerRef" onclick="signIn()" >Sign In</button>
 		</div>  
 		<h3>Explore, Imagine, Create</h3>
 		<!-- The Sign-Up Modal -->
@@ -32,7 +31,7 @@
                <h2>Get Started</h2>
            </div>
 		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
-		   <form>
+		   <form  action="javascript:closeSignUpModal();">
            <div class="modal-body">
               <label for="name-signup">Name</label><br>
 			  <input type="text" id="name-signup" placeholder="Enter your name" required></input><br>
@@ -59,7 +58,7 @@
                <h2>Welcome Back!</h2>
            </div>
 		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
-		   <form>
+		   <form  action="javascript:closeSignInModal();">
            <div class="modal-body">
               <label for="username-signup">Username</label><br>
 			  <input type="text" id="username-signin" placeholder="Enter your username" required></input><br>
@@ -77,14 +76,15 @@
         </div>
       </div>
     </header>
+	<!--header ends here,the below contains elements for title,post,likes,and comments-->
     <h2 id="titleOfPost" contentEditable="false">Sachin Ramesh Tendulkar.......a bit about him</h2>
     <div>
-	   <button type="button" id="editAndSave" class="fa fa-edit" onclick="editPost()">Edit</button><h3>Srishti Gupta</h3>
+	   <button type="button" id="editAndSave" class="fa fa-edit" name="pointerRef" onclick="editPost()">Edit</button><h3>Srishti Gupta</h3>
        <textarea id="contents" name="postContent" rows="15" cols="204" readOnly>Sachin Tendulkar, in full Sachin Ramesh Tendulkar, (born April 24, 1973, Bombay [Mumbai], India), Indian professional cricket player, considered by many to be one of the greatest batsmen of all time. In 2012 he became the first cricketer to score 100 centuries (100 runs in a single innings) in international play.Tendulkar was given his first bat when he was 11 years of age. As a 14-year-old, he used it to score 329 out of a world-record stand of 664 in a school match. A year later he scored a century on his first-class debut for Bombay (Mumbai), and at age 16 years 205 days he became India’s youngest Test (international) cricketer, making his debut against Pakistan in Karachi in November 1989. When he was 18 he scored two centuries in Australia (148 in Sydney and 114 in Perth), and in 1994 he scored 179 against the West Indies. In August 1996, at age 23, Tendulkar was made captain of his country’s team.</textarea>	
-	   <button type="button" id="likesButton" class="fa fa-thumbs-up" onclick="likesForPost()">Like</button><br/><br/><br/>
+	   <button type="button" id="likesButton" class="fa fa-thumbs-up" name="pointerRef"  onclick="likesForPost()">Like</button><br/><br/><br/>
 	   <p id="likesComment">Be the first one to like this!</p>
 	   <textarea id="comments" name="postComments" rows="3" cols="150" placeholder="Leave a comment...." ></textarea><br/>
-	   <button type="button" id="commentButton" onclick="commentsOnPost()">Comment</button><br/>
+	   <button type="button" id="commentButton" name="pointerRef" onclick="commentsOnPost()">Comment</button><br/>
 	   <h4>All Comments</h4>
 	   <div id="addComments"></div>
 		

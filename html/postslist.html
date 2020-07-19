@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <!--head includes all the links to external files-like scripts,css files,font files and meta info-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -15,13 +14,13 @@
 </head>
 
 <body onload="onLoadOfPage()">
-    <!-- TODO: Include code for header here -->
+    <!-- Header begins here -->
 	
 	<header>
 	    <div id="header-div">
           <div id="scribbler-div">ScriBBler</div>		
-		  <button id="sign-Up-Button" type="button" onclick="signUp()" >Sign Up</button>
-		  <button id="sign-In-Button" type="button" onclick="signIn()" >Sign In</button>
+		  <button id="sign-Up-Button" type="button" name="pointerRef" onclick="signUp()" >Sign Up</button>
+		  <button id="sign-In-Button" type="button" name="pointerRef" onclick="signIn()" >Sign In</button>
 		</div>  
 		<h3>Explore, Imagine, Create</h3>
 		<!-- The Sign-Up Modal -->
@@ -34,7 +33,7 @@
                <h2>Get Started</h2>
            </div>
 		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
-		   <form>
+		   <form  action="javascript:closeSignUpModal();"> 
            <div class="modal-body">
               <label for="name-signup">Name</label><br>
 			  <input type="text" id="name-signup" placeholder="Enter your name" required></input><br>
@@ -61,7 +60,7 @@
                <h2>Welcome Back!</h2>
            </div>
 		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
-		   <form>
+		   <form  action="javascript:closeSignInModal();">
            <div class="modal-body">
               <label for="username-signup">Username</label><br>
 			  <input type="text" id="username-signin" placeholder="Enter your username" required></input><br>
@@ -91,10 +90,10 @@
 	 </div>
 	</header>
 
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
-    <div class="hidden pageCover" id="hidePage" style="display:none" ></div>
+    <!-- Header ends here -->
+    
     <!-- list of all posts starts here -->
-	<div class="flex-container" id="flex">
+	<div class="flex-container" id="flex" name="pointerRef">
     <div id="post1" style="display:block" >
       <table>
       <tr><td class="name">Shrishti Gupta</td><td class="post" >

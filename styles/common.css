@@ -1,50 +1,69 @@
-#header-div{
-	display:flex;
-	flex-direction:row;
-	align-items:flex-start;
-	justify-content:flex-start;
+#header-div {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
 	align-content: space-around;
 	
 }
-#scribbler-div{
+#scribbler-div {                                     /*styling for the "scribbler" caption */
 	font-family: 'Montez', cursive;
-	font-size:40px;
-    color:blue;
-    flex-grow:6 	
+	font-size: 40px;
+    color: blue;
+    flex-grow: 6 	
 }
-h2{
-	margin-left:10px;
+h2 {
+	margin-left: 10px;
 }
-h3{
+h3 {
 	font-family: 'Ubuntu Mono', monospace;
 }
-#sign-Up-Button{
-	   background-color:blue;
-	   text-align:center;
-	   color:white;
-	   margin-right:10px;
-	   padding:10px;
-	   border-style:none;
-	   width:100px;
+label {
+	margin-top: 7px;
+	margin-bottom: 8px;
+	margin-left: 10px;
+	
+}
+input{
+	 width: 275px;
+	 margin-top: 7px;
+	 margin-bottom: 8px;
+	 margin-left: 10px;
+	 height: 25px;
+	 background-color: #f0f5f5;
+}
+hr{
+	margin: 10px;
+}
+#sign-Up-Button {
+	   background-color: blue;
+	   text-align: center;
+	   color: white;
+	   margin-right: 10px;
+	   padding: 10px;
+	   border-style: none;
+	   width: 100px;
+	   cursor: pointer;
  }
- #sign-In-Button{
-	   background-color:blue;
-	   text-align:center;
-	   color:white;
-	   margin-left:10px;
-	   padding:10px;
-	   border-style:none;
-	   width:100px;
+ #sign-In-Button {
+	   background-color: blue;
+	   text-align: center;
+	   color: white;
+	   margin-left: 10px;
+	   padding: 10px;
+	   border-style: none;
+	   width: 100px;
+	   cursor: pointer;
  }
  /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position:fixed;
+  position: fixed;
   z-index: 1; /* Sit on top */
-  margin-left:625px;
-  margin-top:150px;
-  width: 20%; /* Full width */
-  height: 53%; /* Full height */
+  margin-left: 625px;
+  margin-top: 150px;
+  width: 20%; /*  width */
+  height: 53%; /* height */
   background-color: white;
 }
 
@@ -72,34 +91,18 @@ h3{
   text-decoration: none;
   cursor: pointer;
 }
-.modal-SignUpOrIn-Button{
-	background-color:#00cc44;
-	color:white;
-	text-align:center;
-	margin-left:10px;
-	width:280px;
-	padding:5px;
-	margin-top:10px;
-	cursor:pointer;
+.modal-SignUpOrIn-Button {
+	background-color: #00cc44;
+	color: white;
+	text-align: center;
+	margin-left: 10px;
+	width: 280px; 
+	padding: 5px;
+	margin-top: 10px;
+	cursor: pointer;
 }
-label{
-	margin-top:7px;
-	margin-bottom:8px;
-	margin-left:10px;
-	
-}
-input{
-	 width:275px;
-	 margin-top:7px;
-	 margin-bottom:8px;
-	 margin-left:10px;
-	 height:25px;
-	 background-color:#f0f5f5;
-}
-hr{
-	margin:10px;
-}
-#ask4Memebership{
+
+#ask4Memebership {
 	margin-left:80px;
 }
  

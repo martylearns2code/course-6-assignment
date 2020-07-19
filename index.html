@@ -2,9 +2,8 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--head includes all the links to external files-like scripts,css files,font files and meta info-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href=".\styles\index.css">
@@ -14,15 +13,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body  onfocus="parentDisable();" onclick="parentDisable();" >
-    <!-- TODO: Include all your code for the header and home page here -->
+<body>
+    <!-- Sign-Up modal and Sign-In modal are included in the Header of the body -->
 	<header>
 	    <div id="header-div">
           <div id="scribbler-div">ScriBBler</div>		
-		  <button id="sign-Up-Button" type="button" onclick="signUp()" >Sign Up</button>
-		  <button id="sign-In-Button" type="button" onclick="signIn()" >Sign In</button>
+		  <button id="sign-Up-Button" type="button" name="pointerRef" onclick="signUp()" >Sign Up</button>
+		  <button id="sign-In-Button" type="button" name="pointerRef" onclick="signIn()" >Sign In</button>
 		</div>  
 		<h3>Explore, Imagine, Create</h3>
+		
+		
 		<!-- The Sign-Up Modal -->
         <div id="signUpModal" class="modal">
 
@@ -33,7 +34,7 @@
                <h2>Get Started</h2>
            </div>
 		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
-		   <form>
+		   <form action="javascript:closeSignUpModal();" >
            <div class="modal-body">
               <label for="name-signup">Name</label><br>
 			  <input type="text" id="name-signup" placeholder="Enter your name" required></input><br>
@@ -47,9 +48,10 @@
            <div class="modal-footer">
               <button type="submit" class="modal-SignUpOrIn-Button">Sign Up</button>
            </div>
-		 </form>  
+		 </form>
         </div>
     </div>
+	
 	<!-- The Sign-In Modal -->
         <div id="signInModal" class="modal">
 
@@ -60,7 +62,7 @@
                <h2>Welcome Back!</h2>
            </div>
 		   <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
-		   <form>
+		   <form action="javascript:closeSignInModal();">
            <div class="modal-body">
               <label for="username-signup">Username</label><br>
 			  <input type="text" id="username-signin" placeholder="Enter your username" required></input><br>
@@ -78,9 +80,10 @@
         </div>
     </div>
 	</header>
+	<!--Rest of the body contains Create-Post modal and two buttons namely allposts and create post-->
     <div id="main-div">
-	     <button id="allposts-Button" type="button" onclick="allPostsRedirect()" >All Posts</button> 
-     	 <button id="createpost-Button" type="button" onclick="createPost()" >Create Post</button>
+	     <button id="allposts-Button" type="button" name="pointerRef" onclick="allPostsRedirect()" >All Posts</button> 
+     	 <button id="createpost-Button" type="button"  name="pointerRef" onclick="createPost()" >Create Post</button>
          <!-- The Create-Post Modal -->
         <div id="createPostModal" class="modalPost">
 
@@ -91,7 +94,7 @@
                <h2>Pen Your Post</h2>
             </div>
 		     <hr style="height:2px;border-width:0;color:#ff0066;background-color:#ff0066">
-		     <form>
+		     <form action="javascript:closePostModal();">
              <div class="modal-body">
                <label for="title">Title</label><br>
 			   <input type="text" id="title" placeholder="Enter title of your post" required></input><br>
